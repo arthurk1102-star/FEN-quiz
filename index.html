@@ -81,6 +81,33 @@
     opacity:.7;
     text-align:center;
   }
+
+  .feedback{
+    margin-top:26px;
+    padding-top:22px;
+    border-top:1px solid #e7ebf0;
+  }
+  .feedback h2{
+    margin-bottom:6px;
+  }
+  .feedback p{
+    margin-top:0;
+    opacity:.8;
+  }
+  .form-wrap{
+    width:100%;
+    overflow:hidden;
+    border-radius:16px;
+    background:#fff;
+    margin-top:12px;
+  }
+  .form-wrap iframe{
+    width:100%;
+    min-height:463px;
+    border:0;
+    display:block;
+  }
+
   .hidden{display:none}
   .score{
     font-size:54px;
@@ -112,6 +139,19 @@
     <div class="score" id="score"></div>
     <p id="message"></p>
     <button class="main" onclick="restartQuiz()">Rejouer</button>
+
+    <div class="feedback">
+      <h2>Une dernière chose…</h2>
+      <p>Une remarque, une question ou une idée pour la FEN ?</p>
+      <div class="form-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfkEbXyW70KR7z2OT2ewThFA3TylX8h3Z3JIFBVI3mqeNdCBQ/viewform?embedded=true"
+          title="Formulaire de retour FEN"
+          loading="lazy">
+          Chargement…
+        </iframe>
+      </div>
+    </div>
   </section>
 
   <div class="footer">Fédération des Étudiants Neuchâtelois</div>
